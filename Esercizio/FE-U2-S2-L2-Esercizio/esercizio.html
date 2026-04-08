@@ -13,70 +13,71 @@
   <body>
     <header>
       <!-- INIZIO NAVBAR -->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search" />
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+      <div class="container">
+        <div class="row">
+          <div class="col px-0">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#"
+                  ><img style="width: 150px" src="./logo-agenzia.png" alt=""
+                /></a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Saldi</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Welcome Summer</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Last Minute</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Recensioni</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex" role="search">
+                    <input
+                      class="form-control me-2"
+                      type="search"
+                      placeholder="Search"
+                      aria-label="Search" />
+                    <button class="btn btn-outline-danger" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </nav>
           </div>
         </div>
-      </nav>
+      </div>
+
       <!-- FINE NAVBAR -->
     </header>
     <main>
       <!-- INIZIO HERO SECTION -->
-      <section>
-        <div class="container">
-          <div class="row bg-light">
-            <div class="col">
+      <section class="d-flex justify-content-center text-center">
+        <div class="container m-5 shadow-sm">
+          <div class="row bg-light p-5">
+            <div class="col text-secondary">
               <h1>Eveline-R - Feel the freedom</h1>
               <hr />
-              <h2>Scopri le destinazioni più calde al mondo</h2>
-              <button class="btn btn-info text-light fw-bold">Prenota ora</button>
+              <h2 class="fst-italic text-">Scopri le destinazioni più calde al mondo</h2>
+              <button class="btn btn-info text-light fw-bold fs-5 mt-5 px-5 py-2">
+                Prenota ora
+              </button>
             </div>
           </div>
         </div>
@@ -86,19 +87,67 @@
       <!-- INIZIO SEZIONE SALDI -->
       <section>
         <!-- TITOLO SALDI -->
-        <div class="container">
+        <div class="container mb-3">
           <div class="row row-cols-2">
-            <div class="col">Saldi</div>
-            <div class="col">Nascondi sezione</div>
+            <div class="col fs-2 fw-semibold">Saldi</div>
+            <div class="col text-end text-info">Nascondi sezione</div>
           </div>
         </div>
         <!-- TITOLO SALDI -->
         <div class="container">
-          <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4">
-            <div class="col">Card</div>
-            <div class="col">Card</div>
-            <div class="col">Card</div>
-            <div class="col">Card</div>
+          <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-2">
+            <div class="col">
+              <div class="card border border-3 border-info">
+                <img src="https://placecats.com/300/200" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the
+                    card’s content.
+                  </p>
+                  <a href="#" class="btn btn-info">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border border-3 border-info">
+                <img src="https://placecats.com/300/200" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the
+                    card’s content.
+                  </p>
+                  <a href="#" class="btn btn-info">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border border-3 border-info">
+                <img src="https://placecats.com/300/200" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the
+                    card’s content.
+                  </p>
+                  <a href="#" class="btn btn-info">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col d-block d-md-none d-lg-block">
+              <div class="card border border-3 border-info">
+                <img src="https://placecats.com/300/200" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the
+                    card’s content.
+                  </p>
+                  <a href="#" class="btn btn-info">Go somewhere</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -106,38 +155,122 @@
 
       <!-- INIZIO SEZIONE WELCOME SUMMER -->
       <section>
-        <!-- TITOLO SALDI -->
-        <div class="container">
-          <div class="row row-cols-2">
-            <div class="col">Welcome Summer</div>
-            <div class="col">Nascondi sezione</div>
+        <!-- TITOLO WELCOME SUMMER -->
+        <div class="container mt-5">
+          <div class="row row-cols-2 mb-4">
+            <div class="col fs-2 fw-semibold">Welcome Summer</div>
+            <div class="col text-end text-info">Nascondi sezione</div>
           </div>
         </div>
-        <!-- TITOLO SALDI -->
+        <!-- TITOLO WELCOME SUMMER -->
         <div class="container">
-          <div class="row row-cols-2 row-cols-lg-3">
-            <div class="col">Card</div>
-            <div class="col">Card</div>
-            <div class="col">Card</div>
-            <div class="col">Card</div>
-            <div class="col">Card</div>
-            <div class="col">Card</div>
+          <div class="row g-3 row-cols-2 row-cols-lg-3 row-cols-xl-6">
+            <div class="col">
+              <div class="card shadow-lg">
+                <img src="https://placecats.com/300/200" class="card-img-top" alt="..." />
+                <span class="badge text-bg-danger position-absolute top-0 end-0 m-2">HOT</span>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the
+                    card’s content.
+                  </p>
+                  <a href="#" class="btn btn-info">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-lg">
+                <img
+                  class="position-relative"
+                  src="https://placecats.com/300/200"
+                  class="card-img-top"
+                  alt="..." />
+                <span class="badge text-bg-danger position-absolute top-0 end-0 m-2">HOT</span>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the
+                    card’s content.
+                  </p>
+                  <a href="#" class="btn btn-info">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-lg">
+                <img src="https://placecats.com/300/200" class="card-img-top" alt="..." />
+                <span class="badge text-bg-danger position-absolute top-0 end-0 m-2">HOT</span>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the
+                    card’s content.
+                  </p>
+                  <a href="#" class="btn btn-info">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-lg">
+                <img src="https://placecats.com/300/200" class="card-img-top" alt="..." />
+                <span class="badge text-bg-danger position-absolute top-0 end-0 m-2">HOT</span>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the
+                    card’s content.
+                  </p>
+                  <a href="#" class="btn btn-info">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-lg">
+                <img src="https://placecats.com/300/200" class="card-img-top" alt="..." />
+                <span class="badge text-bg-danger position-absolute top-0 end-0 m-2">HOT</span>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the
+                    card’s content.
+                  </p>
+                  <a href="#" class="btn btn-info">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-lg">
+                <img src="https://placecats.com/300/200" class="card-img-top" alt="..." />
+                <span class="badge text-bg-danger position-absolute top-0 end-0 m-2">HOT</span>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the
+                    card’s content.
+                  </p>
+                  <a href="#" class="btn btn-info">Go somewhere</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <!-- FINE SEZIONE WELCOME SUMMER -->
 
       <!-- INIZIO OFFERTA DEL GIORNO -->
-      <div class="container">
-        <div class="row">
-          <div class="col">Last Minute</div>
+      <div class="container d-none d-md-block mt-5">
+        <div class="row mb-4">
+          <div class="col fs-2 fw-semibold">Offerta del giorno</div>
         </div>
-        <div class="row row-cols-2">
-          <div class="col"><img src="https://placedog.net/200/100" alt="doggo" /></div>
-          <div class="col">
-            <h2>Fushifaru Maldives</h2>
-            <p>data data data</p>
-            <p>descrizione</p>
+        <div class="row">
+          <div class="col-8">
+            <img class="img-fluid shadow rounded" src="https://placedog.net/900/600" alt="doggo" />
+          </div>
+          <div class="col-3">
+            <h2 class="fs-1 fw-light">Fushifaru Maldives</h2>
+            <p class="font-monospace">15.01-2021-31.01.2021</p>
+            <p class="fs-5 fw-light">Ville a partire da 500€, non fartele sfuggire!</p>
           </div>
         </div>
       </div>
@@ -145,28 +278,28 @@
 
       <!-- INIZIO LAST MINUTE -->
       <section>
-        <div class="container">
-          <div class="row">
-            <div class="col">Last Minute</div>
+        <div class="container mt-5">
+          <div class="row mb-4">
+            <div class="col fs-2 fw-semibold">Last Minute</div>
           </div>
-          <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6">
+          <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-4">
             <div class="col">
-              <img src="https://placedog.net/200/100" alt="doggo" />
+              <img class="w-100 rounded shadow-lg" src="https://placedog.net/200/120" alt="doggo" />
             </div>
             <div class="col">
-              <img src="https://placedog.net/200/100" alt="doggo" />
+              <img class="w-100 rounded shadow" src="https://placedog.net/200/120" alt="doggo" />
             </div>
             <div class="col">
-              <img src="https://placedog.net/200/100" alt="doggo" />
+              <img class="w-100 rounded shadow" src="https://placedog.net/200/120" alt="doggo" />
             </div>
             <div class="col">
-              <img src="https://placedog.net/200/100" alt="doggo" />
+              <img class="w-100 rounded shadow" src="https://placedog.net/200/120" alt="doggo" />
             </div>
             <div class="col">
-              <img src="https://placedog.net/200/100" alt="doggo" />
+              <img class="w-100 rounded shadow" src="https://placedog.net/200/120" alt="doggo" />
             </div>
             <div class="col">
-              <img src="https://placedog.net/200/100" alt="doggo" />
+              <img class="w-100 rounded shadow" src="https://placedog.net/200/120" alt="doggo" />
             </div>
           </div>
         </div>
@@ -174,53 +307,83 @@
       <!-- FINE LAST MINUTE -->
 
       <!-- SEZIONE COMMENTI -->
-      <div class="container">
+      <div class="container mt-5">
         <div class="row">
-          <div class="col">Dicono di noi</div>
+          <div class="col fs-2 fw-semibold text-center">Dicono di noi</div>
         </div>
-        <div class="row">
+        <div class="row mb-4">
           <div class="col-2 col-lg-1">
-            <img class="img-fluid" src="https://placedog.net/100/100" alt="" />
+            <img
+              class="img-fluid rounded-circle border border-3 border-info"
+              src="https://placedog.net/100/100"
+              alt="" />
           </div>
           <div class="col-10 col-lg-11">
-            <h6>Username</h6>
+            <h6 class="fw-semibold">Username</h6>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur aliquid eum
               voluptatem eligendi repellendus accusantium animi facilis, tempora quasi itaque
               perspiciatis asperiores tempore! Eos maxime ipsum officiis deserunt at excepturi!
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod at, eos necessitatibus
+              vel optio reiciendis, vitae sed, nostrum cumque atque temporibus. Quod ducimus amet
+              quaerat non eligendi quas, minus vitae?
             </p>
           </div>
         </div>
-        <div class="row">
+        <div class="row mb-4">
           <div class="col-2 col-lg-1">
-            <img class="img-fluid" src="https://placedog.net/100/100" alt="" />
+            <img
+              class="img-fluid rounded-circle border border-3 border-info"
+              src="https://placedog.net/100/100"
+              alt="" />
           </div>
           <div class="col-10 col-lg-11">
-            <h6>Username</h6>
+            <h6 class="fw-semibold">Username</h6>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur aliquid eum
               voluptatem eligendi repellendus accusantium animi facilis, tempora quasi itaque
               perspiciatis asperiores tempore! Eos maxime ipsum officiis deserunt at excepturi!
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod at, eos necessitatibus
+              vel optio reiciendis, vitae sed, nostrum cumque atque temporibus. Quod ducimus amet
+              quaerat non eligendi quas, minus vitae?
             </p>
           </div>
         </div>
-        <div class="row">
+        <div class="row mb-4">
           <div class="col-2 col-lg-1">
-            <img class="img-fluid" src="https://placedog.net/100/100" alt="" />
+            <img
+              class="img-fluid rounded-circle border border-3 border-info"
+              src="https://placedog.net/100/100"
+              alt="" />
           </div>
           <div class="col-10 col-lg-11">
-            <h6>Username</h6>
+            <h6 class="fw-semibold">Username</h6>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur aliquid eum
               voluptatem eligendi repellendus accusantium animi facilis, tempora quasi itaque
               perspiciatis asperiores tempore! Eos maxime ipsum officiis deserunt at excepturi!
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur aliquid eum
+              voluptatem eligendi repellendus accusantium animi facilis, tempora quasi itaque
+              perspiciatis asperiores tempore! Eos maxime ipsum officiis deserunt at excepturi!
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod at, eos necessitatibus
+              vel optio reiciendis, vitae sed, nostrum cumque atque temporibus. Quod ducimus amet
+              quaerat non eligendi quas, minus vitae?
             </p>
           </div>
         </div>
       </div>
       <!-- SEZIONE COMMENTI -->
     </main>
-    <footer></footer>
+    <footer class="bg-black pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <button type="button" class="btn btn-outline-secondary mb-4">Contattaci</button>
+            <p class="text-light mb-5">@ 2021 Kalina Travel LTD. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
