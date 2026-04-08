@@ -91,16 +91,28 @@
       <!-- FINE HERO SECTION -->
 
       <!-- INIZIO SEZIONE SALDI -->
+
       <section id="saldi">
         <!-- TITOLO SALDI -->
         <div class="container mb-3">
           <div class="row row-cols-2">
             <div class="col fs-2 fw-semibold">Saldi</div>
-            <div class="col text-end text-info">Nascondi sezione</div>
+            <div class="col text-end">
+              <button
+                class="btn btn-primary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseWidthExample"
+                aria-expanded="true"
+                aria-controls="collapseWidthExample">
+                Mostra Sezione
+              </button>
+            </div>
           </div>
         </div>
         <!-- TITOLO SALDI -->
-        <div class="container">
+
+        <div class="container collapse" id="collapseWidthExample">
           <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-2">
             <div class="col">
               <div class="card border border-3 border-info">
@@ -165,11 +177,22 @@
         <div class="container mt-5">
           <div class="row row-cols-2 mb-4">
             <div class="col fs-2 fw-semibold">Welcome Summer</div>
-            <div class="col text-end text-info">Nascondi sezione</div>
+            <div class="col text-end text-info">
+              <button
+                class="btn btn-primary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#welcomeSummerCollapse"
+                aria-expanded="true"
+                aria-controls="welcomeSummerCollapse">
+                Mostra Sezione
+              </button>
+            </div>
           </div>
         </div>
         <!-- TITOLO WELCOME SUMMER -->
-        <div class="container">
+
+        <div class="container collapse" id="welcomeSummerCollapse">
           <div class="row g-3 row-cols-2 row-cols-lg-3 row-cols-xl-6">
             <div class="col">
               <div class="card shadow-lg">
@@ -285,8 +308,19 @@
         <div class="container d-none d-md-block mt-5">
           <div class="row mb-4">
             <div class="col fs-2 fw-semibold">Offerta del giorno</div>
+            <div class="col text-end">
+              <button
+                class="btn btn-primary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#offertaCollapse"
+                aria-expanded="true"
+                aria-controls="offertaCollapse">
+                Mostra Sezione
+              </button>
+            </div>
           </div>
-          <div class="row">
+          <div class="row collapse" id="offertaCollapse">
             <div class="col-8">
               <img
                 class="img-fluid shadow rounded"
