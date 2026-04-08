@@ -27,7 +27,7 @@ const cardBoom = document.querySelectorAll(".card")
 
 const cardExplosion = () => {
   cardBoom.forEach(function (card) {
-    card.setAttribute("style", "display: none;")
+    card.classList.toggle("opacity-0")
   })
   //   console.log(cardBoom)
   //   for (let i = 0; i < cardBoom.length; i++) {
