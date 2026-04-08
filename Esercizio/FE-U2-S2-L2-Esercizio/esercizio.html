@@ -11,7 +11,7 @@
       crossorigin="anonymous" />
   </head>
   <body>
-    <header>
+    <header class="position-sticky top-0 z-3">
       <!-- INIZIO NAVBAR -->
       <div class="container">
         <div class="row">
@@ -37,16 +37,22 @@
                       <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Saldi</a>
+                      <a class="nav-link active" aria-current="page" href="#saldi">Saldi</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Welcome Summer</a>
+                      <a class="nav-link active" aria-current="page" href="#welcome-summer"
+                        >Welcome Summer</a
+                      >
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Last Minute</a>
+                      <a class="nav-link active" aria-current="page" href="#offerta-del-giorno"
+                        >Last Minute</a
+                      >
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Recensioni</a>
+                      <a class="nav-link active" aria-current="page" href="#recensioni"
+                        >Recensioni</a
+                      >
                     </li>
                   </ul>
                   <form class="d-flex" role="search">
@@ -85,7 +91,7 @@
       <!-- FINE HERO SECTION -->
 
       <!-- INIZIO SEZIONE SALDI -->
-      <section>
+      <section id="saldi">
         <!-- TITOLO SALDI -->
         <div class="container mb-3">
           <div class="row row-cols-2">
@@ -154,7 +160,7 @@
       <!-- FINE SEZIONE SALDI -->
 
       <!-- INIZIO SEZIONE WELCOME SUMMER -->
-      <section>
+      <section id="welcome-summer">
         <!-- TITOLO WELCOME SUMMER -->
         <div class="container mt-5">
           <div class="row row-cols-2 mb-4">
@@ -167,8 +173,26 @@
           <div class="row g-3 row-cols-2 row-cols-lg-3 row-cols-xl-6">
             <div class="col">
               <div class="card shadow-lg">
-                <img src="https://placecats.com/300/200" class="card-img-top" alt="..." />
-                <span class="badge text-bg-danger position-absolute top-0 end-0 m-2">HOT</span>
+                <div class="hot">
+                  <img src="https://placecats.com/300/200" class="card-img-top" alt="..." />
+                  <div class="card-body"></div>
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the
+                    card’s content.
+                  </p>
+                  <a href="#" class="btn btn-info">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-lg">
+                <div class="hot">
+                  <img
+                    src="https://placecats.com/300/200"
+                    class="position-relative card-img-top"
+                    alt="..." />
+                </div>
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">
@@ -181,12 +205,12 @@
             </div>
             <div class="col">
               <div class="card shadow-lg">
-                <img
-                  class="position-relative"
-                  src="https://placecats.com/300/200"
-                  class="card-img-top"
-                  alt="..." />
-                <span class="badge text-bg-danger position-absolute top-0 end-0 m-2">HOT</span>
+                <div class="hot">
+                  <img
+                    src="https://placecats.com/300/200"
+                    class="position-relative card-img-top"
+                    alt="..." />
+                </div>
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">
@@ -199,8 +223,12 @@
             </div>
             <div class="col">
               <div class="card shadow-lg">
-                <img src="https://placecats.com/300/200" class="card-img-top" alt="..." />
-                <span class="badge text-bg-danger position-absolute top-0 end-0 m-2">HOT</span>
+                <div class="hot">
+                  <img
+                    src="https://placecats.com/300/200"
+                    class="position-relative card-img-top"
+                    alt="..." />
+                </div>
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">
@@ -213,8 +241,12 @@
             </div>
             <div class="col">
               <div class="card shadow-lg">
-                <img src="https://placecats.com/300/200" class="card-img-top" alt="..." />
-                <span class="badge text-bg-danger position-absolute top-0 end-0 m-2">HOT</span>
+                <div class="hot">
+                  <img
+                    src="https://placecats.com/300/200"
+                    class="position-relative card-img-top"
+                    alt="..." />
+                </div>
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">
@@ -227,22 +259,12 @@
             </div>
             <div class="col">
               <div class="card shadow-lg">
-                <img src="https://placecats.com/300/200" class="card-img-top" alt="..." />
-                <span class="badge text-bg-danger position-absolute top-0 end-0 m-2">HOT</span>
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make up the bulk of the
-                    card’s content.
-                  </p>
-                  <a href="#" class="btn btn-info">Go somewhere</a>
+                <div class="hot">
+                  <img
+                    src="https://placecats.com/300/200"
+                    class="position-relative card-img-top"
+                    alt="..." />
                 </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-lg">
-                <img src="https://placecats.com/300/200" class="card-img-top" alt="..." />
-                <span class="badge text-bg-danger position-absolute top-0 end-0 m-2">HOT</span>
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">
@@ -259,25 +281,30 @@
       <!-- FINE SEZIONE WELCOME SUMMER -->
 
       <!-- INIZIO OFFERTA DEL GIORNO -->
-      <div class="container d-none d-md-block mt-5">
-        <div class="row mb-4">
-          <div class="col fs-2 fw-semibold">Offerta del giorno</div>
-        </div>
-        <div class="row">
-          <div class="col-8">
-            <img class="img-fluid shadow rounded" src="https://placedog.net/900/600" alt="doggo" />
+      <section id="offerta-del-giorno">
+        <div class="container d-none d-md-block mt-5">
+          <div class="row mb-4">
+            <div class="col fs-2 fw-semibold">Offerta del giorno</div>
           </div>
-          <div class="col-3">
-            <h2 class="fs-1 fw-light">Fushifaru Maldives</h2>
-            <p class="font-monospace">15.01-2021-31.01.2021</p>
-            <p class="fs-5 fw-light">Ville a partire da 500€, non fartele sfuggire!</p>
+          <div class="row">
+            <div class="col-8">
+              <img
+                class="img-fluid shadow rounded"
+                src="https://placedog.net/900/600"
+                alt="doggo" />
+            </div>
+            <div class="col-3">
+              <h2 class="fs-1 fw-light">Fushifaru Maldives</h2>
+              <p class="font-monospace">15.01-2021-31.01.2021</p>
+              <p class="fs-5 fw-light">Ville a partire da 500€, non fartele sfuggire!</p>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- FINE OFFERTA DEL GIORNO -->
 
       <!-- INIZIO LAST MINUTE -->
-      <section>
+      <section id="last-minute">
         <div class="container mt-5">
           <div class="row mb-4">
             <div class="col fs-2 fw-semibold">Last Minute</div>
@@ -306,80 +333,132 @@
       </section>
       <!-- FINE LAST MINUTE -->
 
-      <!-- SEZIONE COMMENTI -->
-      <div class="container mt-5">
-        <div class="row">
-          <div class="col fs-2 fw-semibold text-center">Dicono di noi</div>
+      <!-- INIZIO SEZIONE RECENSIONI-->
+      <section id="recensioni">
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col fs-2 fw-semibold text-center">Dicono di noi</div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-2 col-lg-1">
+              <img
+                class="img-fluid rounded-circle border border-3 border-info"
+                src="https://placedog.net/100/100"
+                alt="" />
+            </div>
+            <div class="col-10 col-lg-11">
+              <h6 class="fw-semibold">Username</h6>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur aliquid eum
+                voluptatem eligendi repellendus accusantium animi facilis, tempora quasi itaque
+                perspiciatis asperiores tempore! Eos maxime ipsum officiis deserunt at excepturi!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod at, eos
+                necessitatibus vel optio reiciendis, vitae sed, nostrum cumque atque temporibus.
+                Quod ducimus amet quaerat non eligendi quas, minus vitae?
+              </p>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-2 col-lg-1">
+              <img
+                class="img-fluid rounded-circle border border-3 border-info"
+                src="https://placedog.net/100/100"
+                alt="" />
+            </div>
+            <div class="col-10 col-lg-11">
+              <h6 class="fw-semibold">Username</h6>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur aliquid eum
+                voluptatem eligendi repellendus accusantium animi facilis, tempora quasi itaque
+                perspiciatis asperiores tempore! Eos maxime ipsum officiis deserunt at excepturi!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod at, eos
+                necessitatibus vel optio reiciendis, vitae sed, nostrum cumque atque temporibus.
+                Quod ducimus amet quaerat non eligendi quas, minus vitae?
+              </p>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-2 col-lg-1">
+              <img
+                class="img-fluid rounded-circle border border-3 border-info"
+                src="https://placedog.net/100/100"
+                alt="" />
+            </div>
+            <div class="col-10 col-lg-11">
+              <h6 class="fw-semibold">Username</h6>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur aliquid eum
+                voluptatem eligendi repellendus accusantium animi facilis, tempora quasi itaque
+                perspiciatis asperiores tempore! Eos maxime ipsum officiis deserunt at excepturi!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur aliquid eum
+                voluptatem eligendi repellendus accusantium animi facilis, tempora quasi itaque
+                perspiciatis asperiores tempore! Eos maxime ipsum officiis deserunt at excepturi!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod at, eos
+                necessitatibus vel optio reiciendis, vitae sed, nostrum cumque atque temporibus.
+                Quod ducimus amet quaerat non eligendi quas, minus vitae?
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="row mb-4">
-          <div class="col-2 col-lg-1">
-            <img
-              class="img-fluid rounded-circle border border-3 border-info"
-              src="https://placedog.net/100/100"
-              alt="" />
-          </div>
-          <div class="col-10 col-lg-11">
-            <h6 class="fw-semibold">Username</h6>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur aliquid eum
-              voluptatem eligendi repellendus accusantium animi facilis, tempora quasi itaque
-              perspiciatis asperiores tempore! Eos maxime ipsum officiis deserunt at excepturi!
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod at, eos necessitatibus
-              vel optio reiciendis, vitae sed, nostrum cumque atque temporibus. Quod ducimus amet
-              quaerat non eligendi quas, minus vitae?
-            </p>
-          </div>
-        </div>
-        <div class="row mb-4">
-          <div class="col-2 col-lg-1">
-            <img
-              class="img-fluid rounded-circle border border-3 border-info"
-              src="https://placedog.net/100/100"
-              alt="" />
-          </div>
-          <div class="col-10 col-lg-11">
-            <h6 class="fw-semibold">Username</h6>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur aliquid eum
-              voluptatem eligendi repellendus accusantium animi facilis, tempora quasi itaque
-              perspiciatis asperiores tempore! Eos maxime ipsum officiis deserunt at excepturi!
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod at, eos necessitatibus
-              vel optio reiciendis, vitae sed, nostrum cumque atque temporibus. Quod ducimus amet
-              quaerat non eligendi quas, minus vitae?
-            </p>
-          </div>
-        </div>
-        <div class="row mb-4">
-          <div class="col-2 col-lg-1">
-            <img
-              class="img-fluid rounded-circle border border-3 border-info"
-              src="https://placedog.net/100/100"
-              alt="" />
-          </div>
-          <div class="col-10 col-lg-11">
-            <h6 class="fw-semibold">Username</h6>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur aliquid eum
-              voluptatem eligendi repellendus accusantium animi facilis, tempora quasi itaque
-              perspiciatis asperiores tempore! Eos maxime ipsum officiis deserunt at excepturi!
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur aliquid eum
-              voluptatem eligendi repellendus accusantium animi facilis, tempora quasi itaque
-              perspiciatis asperiores tempore! Eos maxime ipsum officiis deserunt at excepturi!
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod at, eos necessitatibus
-              vel optio reiciendis, vitae sed, nostrum cumque atque temporibus. Quod ducimus amet
-              quaerat non eligendi quas, minus vitae?
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- SEZIONE COMMENTI -->
+      </section>
+      <!-- FINE SEZIONE RECENSIONI-->
     </main>
     <footer class="bg-black pt-5">
       <div class="container">
         <div class="row">
           <div class="col text-center">
-            <button type="button" class="btn btn-outline-secondary mb-4">Contattaci</button>
+            <button
+              type="button"
+              class="btn btn-outline-secondary mb-4"
+              data-bs-toggle="modal"
+              data-bs-target="#modalContact">
+              Contattaci
+            </button>
             <p class="text-light mb-5">@ 2021 Kalina Travel LTD. All Rights Reserved.</p>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="modalContact"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Nuovo Messaggio</h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-start">
+                    <form>
+                      <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Mail:</label>
+                        <input type="text" class="form-control" id="recipient-name" />
+                      </div>
+                      <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Messaggio:</label>
+                        <textarea class="form-control" id="message-text"></textarea>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                      Chiudi
+                    </button>
+                    <button type="button" class="btn btn-primary">Invia</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- FINE MODALE -->
+            <!-- INIZIO DANGER ZONE -->
+            <button onclick="cardExplosion()" type="button" class="btn btn-danger mb-4">
+              Card Explosion
+            </button>
+            <!-- FINE  DANGER ZONE -->
           </div>
         </div>
       </div>
@@ -388,5 +467,6 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
